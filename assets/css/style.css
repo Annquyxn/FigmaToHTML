@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    height: 1000px;
+}
+
+/*          common elements           */
+
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    color: #fff;
+    min-width: 118px;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 24.5px;
+    background-color: black;
+    line-height: 50px;
+}
+
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*              header                */
+.header.fixed {
+    position: sticky;
+    top: -21px;
+}
+
+.header .body-header {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;        /*  Khi sticky thi cach phan ben duoi 8px   */
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    color: gray;
+    font-size: 1.6rem;
+    padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {  
+    color: #000000;
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after{
+    display: block;
+    position: absolute;
+    content: "";
+    margin-left: 21px;
+    bottom: 6px;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #7f7f7f;
+}
+
+.btn-sign-up {
+    min-width: 114px;
+
+}
+
+.header.action {
+    margin-left: 49px;
+}
