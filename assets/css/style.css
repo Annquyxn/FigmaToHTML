@@ -1,27 +1,36 @@
 * {
     box-sizing: border-box;
-}
-
-:root {
+  }
+  
+  :root {
     --font-heading: "Sen", sans-serif;
-    --primary-color: #FFB900;
-}
+    --primary-color: #ffb900;
+  }
   
   html {
     font-size: 62.5%;
   }
   
   /* khôi phục lại cỡ chữ mặc định theo rem */
-body {
+  body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-}
-/* =================common================== */
-a {
+  }
+  /* =================common================== */
+  a {
     text-decoration: none;
-}
+  }
   
-.btn {
+  .heading-lv2 {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.76px;
+  }
+  
+  .btn {
     display: inline-block;
     min-width: 118px;
     padding: 0 16px;
@@ -32,73 +41,58 @@ a {
     font-weight: 600;
     border-radius: 999px;
     background: #171100;
-}
-
-.btn:hover {
-    opacity: 0.8;
-<<<<<<< HEAD
-=======
-    cursor: pointer;
->>>>>>> d9647fd (90.6 Project 01 – p6 – Code phần popular)
-}
+  }
   
-.main-content {
+  .btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
-}
-
-<<<<<<< HEAD
-=======
-.heading-lv2 {
-    color: #171100;
-    font-family: var(--font-heading);
-    font-size: 3.8rem;
-    line-height: 1.27;
-    letter-spacing: -0.76px;
-}
->>>>>>> d9647fd (90.6 Project 01 – p6 – Code phần popular)
-  
-/* =================header================== */
-  .header {
-    z-index: 1;
-    background: #FFFCF4;
   }
   
-.header.fixed {
+  /* =================header================== */
+  .header {
+    background: #fffcf4;
+  }
+  
+  .header.fixed {
+    z-index: 1;
     position: sticky;
     top: -28px;
   }
-.header .body {
+  .header .body {
     display: flex;
     align-items: center;
     padding: 36px 0 8px;
-}
+  }
   
-.nav {
+  .nav {
     margin-left: auto;
-}
-
-.nav ul {
+  }
+  .nav ul {
     display: flex;
-}
+  }
   
-.nav a {
+  .nav a {
     position: relative;
     color: #5f5b53;
     font-size: 1.6rem;
     padding: 8px 21px;
-}
+  }
   
-.nav li.active a,
-.nav a:hover {
+  .nav li.active a,
+  .nav a:hover {
     color: #171100;
     /* font-weight: 600; */
     text-shadow: 1px 0 0 currentColor;
-}
+  }
   
-.nav li.active a::after {
+  .nav li.active a::after {
     position: absolute;
     left: 21px;
     bottom: 6px;
@@ -108,298 +102,295 @@ a {
     height: 2px;
     border-radius: 1px;
     background: #171100;
-}
+  }
   
-.header .btn-sign-up {
+  .header .btn-sign-up {
     min-width: 144px;
-}
+  }
   
-.header .action{
+  .header .action {
     margin-left: 49px;
-}
-
-/* =================hero================== */
-.hero {
+  }
+  
+  /* ================hero================== */
+  .hero {
     padding: 56px 0 65px;
-    background-color: #FFFCF4;
-}
-
-.hero .body {
+    background: #fffcf4;
+  }
+  
+  .hero .body {
     display: flex;
-}
-
-
-/* =================Khoi ben trai================== */
-.hero .media-block {
+  }
+  
+  /* ========= hero left ============== */
+  .hero .media-block {
     position: relative;
     width: 48%;
-}
-
-.hero .media-block .img {
+  }
+  
+  .hero .media-block .img {
     width: 470px;
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
-}
-
-.hero .hero-summary {
-    position: absolute;
+  }
+  
+  .hero .hero-summary {
     padding: 24px;
+    width: 270px;
+    position: absolute;
     bottom: 48px;
     right: 0;
-    background: #fff;
-    box-shadow: 0px 16px 32px 0px #0000000D;
-    width: 270px;
     border-radius: 12px;
-}
-
-.hero-summary .item {
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  .hero-summary .item {
     display: flex;
     align-items: center;
-}
-
-.hero-summary .item +.item {
-    padding-top: 24px;
-}
-
-.item .icon {
+  }
+  
+  .hero-summary .item + .item {
+    margin-top: 22px;
+  }
+  
+  .hero-summary .icon {
     width: 48px;
     height: 48px;
-    background-color: #FFF9E8;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero-summary .icon2 {
-    background-color: #FCEFFF;
-}
-
-.hero-summary .icon3 {
-    background-color: #EBEAFF;
-}
-
-.hero-summary .info {
+    background-color: #fff9e8;
+  }
+  
+  .hero-summary .icon2 {
+    background-color: #fcefff;
+  }
+  
+  .hero-summary .icon3 {
+    background-color: #ebeaff;
+  }
+  
+  .hero-summary .info {
     margin-left: 16px;
-}
-
-.hero-summary .label {
+  }
+  
+  .hero-summary .label {
     color: #5f5b53;
     font-size: 1.4rem;
-    line-height: 186%;
-}
-
-.hero-summary .title {
-    font-weight: 600;
+    line-height: 1.86; /* 185.714% */
+  }
+  
+  .hero-summary .title {
+    color: #171100;
     font-size: 1.8rem;
-    line-height: 167%;
-}
-
-/* =================Khoi ben phai================== */
-
-.hero .content-block {
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+  }
+  
+  /* =========== hero right======== */
+  .hero .content-block {
     width: 52%;
     padding-left: 130px;
     padding-top: 64px;
-}
-
-.hero .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -2%;
+  }
+  
+  .hero .heading {
     color: #171100;
-}
-
-.hero .desc {
-    padding-top: 22px;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+  }
+  
+  .hero .desc {
+    margin-top: 22px;
+    color: #5f5b53;
     font-size: 1.8rem;
     line-height: 1.67;
-}
-
-.hero .cta-group {
-    margin-top: 38px;
+  }
+  
+  .hero .cta-group {
     display: flex;
     align-items: center;
-}
-
-.hero-cta {
+    margin-top: 38px;
+  }
+  
+  .hero-cta {
     min-width: 180px;
     line-height: 64px;
     background-color: var(--primary-color);
-    color: white;
-}
-
-.hero .watch-video {
+  }
+  
+  .hero .watch-video {
+    margin-left: 28px;
     border: none;
     background: transparent;
     display: flex;
-    margin-left: 28px;
     align-items: center;
     cursor: pointer;
-}
-
-.hero .watch-video .icon {
+  }
+  
+  .hero .watch-video .icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    box-shadow: 0px 8px 16px 0px #00000012;
-    background: #FFFFFF;
     border-radius: 40px;
-}
-
-.hero .watch-video .span {
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+  }
+  
+  .hero .watch-video span {
     margin-left: 14px;
-    font-weight: 600;
+    color: #171100;
     font-size: 1.8rem;
+    font-weight: 600;
     line-height: 1.67;
-}
-
-.hero .desc-Recent {
+  }
+  
+  .hero .desc-recent {
     margin-top: 48px;
-}
-
-.hero .stats {
+  }
+  
+  .hero .stats {
     margin-top: 8px;
-}
-
-.hero .stats strong {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 4.4rem;
-    line-height: 1.23px;
+  }
+  
+  .hero .stats strong {
     margin-right: 15px;
-}
-
-.hero .stats strong:nth-child(2) {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23;
+  }
+  
+  .hero .stats strong:nth-child(2) {
     margin-left: 28px;
-<<<<<<< HEAD
-}
-=======
-}
-
-/* =================popular================== */
-.popular {
+  }
+  
+  /* ================ popular ================== */
+  .popular {
     padding: 65px 0;
     margin-top: 135px;
-    background-color: #FFFCF4;
-}
-
-.popular-top {
+  }
+  
+  .popular-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.popular-top .desc {
-    padding-top: 16px;
+  }
+  
+  .popular-top .desc {
+    margin-top: 16px;
     width: 458px;
     color: #5f5b53;
     font-size: 1.8rem;
     line-height: 1.67;
-}
-
-.popular-top .controls {
+  }
+  
+  .popular-top .controls {
     display: flex;
     gap: 18px;
-}
-
-.popular-top .control-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.popular-top .control-btn:hover {
-  background: var(--primary-color);
-  color: #fff;
-  cursor: pointer;
-}
-
-.popular .course-list {
+  }
+  
+  .popular-top .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  .popular-top .control-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .popular .course-list {
     display: flex;
     gap: 30px;
-    padding-top: 55px;
-}
-
-.popular .course-item {
+    margin-top: 55px;
+  }
+  
+  .popular .course-item {
+    border-radius: 12px;
     border: 1px solid #e2dfda;
+    background: #fff;
+  }
+  
+  .popular .course-item:hover {
+    border: 1px solid transparent;
     border-radius: 12px;
     background: #fff;
-}
-
-.popular .course-item:hover {
-    border: none;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
-}
-
-.popular .course-item .thumb {
-    width: 100%;
+  }
+  
+  .popular .course-item .thumb {
+    border-radius: 12px 12px 0px 0px;
     height: 278px;
-    border-radius: 12px 12px 0 0;
     object-fit: cover;
-}
-
-.popular .course-item .info {
+    width: 100%;
+  }
+  
+  .popular .course-item .info {
     padding: 16px 22px 22px;
-}
-
-.popular .course-item .foot,
-.popular .course-item .head .rating,
-.popular .course-item .head {
+  }
+  
+  .popular .course-item .foot,
+  .popular .course-item .rating,
+  .popular .course-item .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.popular .course-item .head .title {
+  }
+  
+  .popular .course-item .title a{
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
-}
-
-.popular .rating .value {
+  }
+  
+  .popular .rating .value {
     margin-left: 6px;
     color: #fea31b;
-    font-size: 1.6rem;
+    font-size: 16px;
     line-height: 1.75;
-}
-
-.popular .course-item .desc {
+  }
+  
+  .popular .course-item .desc {
     margin-top: 6px;
     color: #5f5b53;
     font-size: 1.4rem;
     line-height: 1.86;
-}
-
-.popular .course-item .foot {
+  }
+  
+  .popular .course-item .foot {
     margin-top: 12px;
-}
-
-.popular .course-item .price {
+  }
+  
+  .popular .course-item .price {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
-}
-
-.popular .course-item .foot .btn-book {
+  }
+  
+  .popular .course-item .btn-book {
     border: none;
-}
-
-.popular .course-item .foot .btn-book:hover {
-    background-color: var(--primary-color);
-}
-
->>>>>>> d9647fd (90.6 Project 01 – p6 – Code phần popular)
+  }
+  
+  .popular .course-item .btn-book:hover {
+    background: var(--primary-color);
+  }
